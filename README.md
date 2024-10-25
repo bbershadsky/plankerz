@@ -2,8 +2,6 @@
 
 > Planking/Pomodoro Timer
 
-![screenshot](./app_screenshot.png)
-
 Plankerz is a customizable timer that works on desktop & mobile browser.
 
 ## Features
@@ -19,7 +17,7 @@ Plankerz is a customizable timer that works on desktop & mobile browser.
 
 ## Live Demo
 
-[Live Demo Link](https://pomofocus-lite.vercel.app/)
+[Live Demo Link](https://plankerz.vercel.app)
 
 ## Getting Started
 
@@ -63,7 +61,7 @@ yarn test
 
 ## Authors
 
-Thank you for the this great React clone of Pomofocus
+Thank you for this great React clone of Pomofocus
 https://github.com/usmansbk/pomofocus.git
 
 ## 🤝 Contributing
