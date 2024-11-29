@@ -119,30 +119,6 @@ export default function Settings() {
                 ))}
               </div>
             </Item>
-            <Item>
-              <Label>Auto start Breaks?</Label>
-              <Switch
-                on={autoBreaks}
-                onClick={() => dispatch(toggleAutoBreaks())}
-              />
-            </Item>
-            <Item>
-              <Label>Auto start Pomodoros?</Label>
-              <Switch
-                on={autoPomodoros}
-                onClick={() => dispatch(toggleAutoPomodoros())}
-              />
-            </Item>
-            <Item>
-              <Label>Long Break interval</Label>
-              <Input
-                className={classes.tinyInput}
-                min={1}
-                type="number"
-                value={longBreakInterval}
-                onChange={(e) => dispatch(setLongBreakInterval(e.target.value))}
-              />
-            </Item>
             <Item col>
               <Row>
                 <Label>Alarm Sound</Label>

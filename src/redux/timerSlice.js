@@ -15,7 +15,7 @@ const initialState = {
   modes: {
     [POMODORO]: {
       id: POMODORO,
-      label: "Pomodoro",
+      label: "PLANK",
       time: 2,
     },
     [SHORT_BREAK]: {
