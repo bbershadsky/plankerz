@@ -16,17 +16,17 @@ const initialState = {
     [POMODORO]: {
       id: POMODORO,
       label: "Pomodoro",
-      time: 2.75,
+      time: 2,
     },
     [SHORT_BREAK]: {
       id: SHORT_BREAK,
       label: "Short Break",
-      time: 5,
+      time: 2,
     },
     [LONG_BREAK]: {
       id: LONG_BREAK,
       label: "Long Break",
-      time: 15,
+      time: 2,
     },
   },
 };
