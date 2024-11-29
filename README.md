@@ -1,6 +1,6 @@
 # Plankerz
 
-> Planking/Pomodoro Timer
+> Planking Timer
 
 Plankerz is a customizable timer that works on desktop & mobile browser.
 
@@ -58,6 +58,16 @@ yarn build
 ```bash
 yarn test
 ```
+
+### Deploy
+
+```bash
+vc deploy --prod
+```
+
+#### RTF Word Analysis (for making word cloud using chat history)
+
+`➜ python3 common-words.py`
 
 ## Authors
 

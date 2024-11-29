@@ -4,7 +4,6 @@ import Input from "./Input";
 import Modal from "./Modal";
 import Select from "./Select";
 import Slider from "./Slider";
-import Switch from "./Switch";
 import Button from "./Button";
 import classes from "./Settings.module.css";
 import { useDispatch, useSelector } from "react-redux";
@@ -12,11 +11,8 @@ import {
   setAlarmRepeat,
   setAlarmSound,
   setAlarmVolume,
-  setLongBreakInterval,
   setTickingSound,
   setTickingVolume,
-  toggleAutoBreaks,
-  toggleAutoPomodoros,
   updateModeTime,
 } from "../redux/timerSlice";
 import {
@@ -82,9 +78,6 @@ export default function Settings() {
 
   const {
     modes,
-    autoBreaks,
-    autoPomodoros,
-    longBreakInterval,
     alarmSound,
     alarmVolume,
     alarmRepeat,

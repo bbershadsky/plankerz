@@ -31,20 +31,6 @@ const tickingAudio = player({
 
 const alarmAudio = player({});
 
-const SecondaryButton = ({ children, active, onClick }) => {
-  return (
-    <button
-      onClick={onClick}
-      className={clsx(
-        classes.secondaryButton,
-        active && classes.secondaryActive
-      )}
-    >
-      {children}
-    </button>
-  );
-};
-
 const PrimaryButton = ({ active, onClick, color }) => (
   <button
     onClick={onClick}
@@ -173,13 +159,6 @@ export default function Timer() {
     confirmAction(next);
   }, [confirmAction, next]);
 
-  const confirmJump = useCallback(
-    (id) => {
-      confirmAction(() => jumpTo(id));
-    },
-    [confirmAction, jumpTo]
-  );
-
   const toggleTimer = useCallback(() => {
     buttonSound.play();
     if (ticking) {
@@ -194,18 +173,6 @@ export default function Timer() {
       <Progress percent={progress} />
       <div className={classes.container}>
         <div className={classes.content}>
-          {/* <ul>
-            {Object.values(modes).map(({ id, label }) => (
-              <SecondaryButton
-                key={id}
-                active={id === mode}
-                id={id}
-                onClick={() => confirmJump(id)}
-              >
-                {label}
-              </SecondaryButton>
-            ))}
-          </ul> */}
           <div className={classes.time}>{formatTime(timeLeft)}</div>
           <div className={classes.actionButtons}>
             <div className={classes.left} />
